@@ -1,0 +1,86 @@
+@font-face {
+/*	font-family: "Noto Sans KR";
+	src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap") format("woff");
+	font-style: normal;*/
+
+	font-family:"Noto Serif KR", serif;
+	src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500&display=swap") format("woff");
+	font-style: condensed;
+}
+
+@keyframes blink-effect {
+	30% {
+		opacity: 0;
+	}
+}
+
+.name {
+	margin: .1rem;
+	padding-top: .2rem;
+}
+
+.navigation {
+	margin-top: 0.3rem;
+	text-align: left;
+	line-height: 1.5rem;
+
+	cursor: pointer;
+}
+
+.navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+.no {
+	animation: blink-effect 1.5s ease-in-out infinite;
+}
+
+
+.container, .container1 {
+	display: grid;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	bottom: 3%;
+	width: 100%;
+	height: 87%;
+
+	grid-template-columns: repeat(10, 10fr);
+	grid-template-rows: repeat(10, 10fr);
+	gap: .5px;
+}
+
+.container .item {
+	color: black;
+	font-size: 1rem;
+	text-align: left;
+
+	padding-top: 0.1rem;
+	padding-left: 0.2rem;
+
+	cursor: pointer;
+}
+
+.container1 .item {
+	color: black;
+	font-size: 1rem;
+	text-align: left;
+
+	padding-top: 0.1rem;
+	padding-left: 0.2rem;
+
+	cursor: pointer;
+}
+
+
+footer {
+	font-size: .7rem;
+
+	position: absolute;
+	bottom: .5rem;
+	right: .7rem;
+
+	color: grey;
+}
